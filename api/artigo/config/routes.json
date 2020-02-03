@@ -2,14 +2,6 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/artigos/tagged/:tag",
-      "handler": "artigo.byTag",
-      "config": {
-        "policies": []
-      }
-    },
-    {
-      "method": "GET",
       "path": "/artigos",
       "handler": "Artigo.find",
       "config": {
