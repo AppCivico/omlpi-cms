@@ -21,7 +21,9 @@
       "type": "text"
     },
     "tags": {
-      "collection": "tag"
+      "collection": "tag",
+      "via": "artigos",
+      "dominant": true
     }
   }
 }
