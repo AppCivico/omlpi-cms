@@ -2,14 +2,33 @@
 # OS X
 ############################
 
+# General
 .DS_Store
 .AppleDouble
 .LSOverride
-Icon
-.Spotlight-V100
-.Trashes
-._*
 
+# Icon must end with two \r
+Icon
+
+
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+# Thumbnails
+._*
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
 
 ############################
 # Linux
@@ -17,19 +36,46 @@ Icon
 
 *~
 
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
 
 ############################
 # Windows
 ############################
 
+# Windows thumbnail cache files
 Thumbs.db
 ehthumbs.db
-Desktop.ini
+Thumbs.db:encryptable
+ehthumbs_vista.db
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
 $RECYCLE.BIN/
+
+# Windows Installer files
 *.cab
 *.msi
+*.msix
 *.msm
 *.msp
+
+# Dump file
+*.stackdump
+
+# Windows shortcuts
+*.lnk
 
 
 ############################
@@ -107,7 +153,17 @@ coverage
 # Strapi
 ############################
 
+.env
+license.txt
 exports
-.cache
+*.cache
 build
-package-lock.json
+.strapi-updater.json
+
+### vscode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace

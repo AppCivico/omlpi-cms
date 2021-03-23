@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "noticias",
+  "info": {
+    "name": "noticias"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}
