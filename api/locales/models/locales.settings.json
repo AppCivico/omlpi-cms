@@ -89,6 +89,9 @@
     },
     "is_law": {
       "type": "boolean"
+    },
+    "hide_plan": {
+      "type": "boolean"
     }
   }
 }
