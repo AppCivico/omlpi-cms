@@ -29,6 +29,12 @@
     },
     "link": {
       "type": "string"
+    },
+    "youtube": {
+      "type": "string"
+    },
+    "hide_date": {
+      "type": "boolean"
     }
   }
 }
