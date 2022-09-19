@@ -32,7 +32,8 @@
       "type": "string"
     },
     "hide_date": {
-      "type": "boolean"
+      "type": "boolean",
+      "private": false
     }
   }
 }
